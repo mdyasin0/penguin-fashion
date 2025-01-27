@@ -6,14 +6,28 @@
     <title>Document</title>
     <!-- google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- icon cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .bebas-neue {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+    </style>
 </head>
-<body>
+<body class="roboto">
 <header class="bg-[#FFFBF0]">
     <!-- navbar -->
     <nav class="flex justify-between w-3/4 mx-auto pt-8 items-center pb-6">
@@ -21,7 +35,7 @@
           <img class="w-[45%] md:w-60 2xl:w-60 " src="icons/logo.png" alt=" logo photo">
       </div>
       <div>
-          <ul class="font-[Roboto] hidden md:flex gap-5 block 2xl: flex gap-5 block  ">
+          <ul class=" hidden md:flex gap-5 block 2xl: flex gap-5 block  ">
               <li><a href="#">Home</a></li>
               <li><a href="#">Product</a></li>
               <li><a href="#">About us</a></li>
@@ -32,6 +46,19 @@
        </div>
       </div>
     </nav>
+    <!-- banner section -->
+     <section class="  md:flex   w-3/4 mx-auto items-center justify-between pb-8">
+      <div class="mx-auto  ">
+        <h1 class="uppercase  bebas-neue  text-[4vw]  "><span class="text-[#FABE4C]">Be the Penguins </span> <br>
+          <span class=" text-[#363958]"> of Winter </span> </h1>
+          <p class="mb-[3vw] text-[1.4vw] ">Lorem Ipsum is simply dummy text of the  printing <br>
+            and typesetting industry.</p>
+            <buttonv class=" text-[1.3vw]  font-medium py-[0.9vw] px-[2.9vw] rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019]"><i class="mr-2 text-white fa-solid fa-cart-shopping"></i>BUY NOW</button>
+      </div>
+      <div>
+        <img class="w-80 mx-auto w-[75%] mt-10 " src="images/model.png" alt="moddel image">
+      </div>
+     </section>
 </header>
 </body>
 </html>
